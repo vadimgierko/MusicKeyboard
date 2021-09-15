@@ -3,35 +3,83 @@
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
-
+    <!-- FOR BOOTSTRAP 4.6 STYLINGS: -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">  
   </head>
   <body>
-    <div id="upperRow">
-      <button id="Gis">G#</button>
-      <button id="Ais">A#</button>
-        <button style="background-color: white; color: white">x</button> <!--empty spaces-->
-      <button id="Cis">C#</button>
-      <button id="Dis">D#</button>
-        <button style="background-color: white; color: white">x</button> <!--empty spaces-->
-      <button id="Fis">F#</button>   
+      <div class="container">
+        <h1 class="text-center">MusicKeyboard App</h1>
+        <p class="text-center">This application turns your computer keyboard into piano keyboard!</p>
+        <p class="text-center">You can play chords with your left hand &amp; melody with your right!</p>
+
+        <div class="row">
+            <div class="col border border-secondary rounded m-3">
+                <h3>To play chords you need to press some of below keys with your left hand:</h3>
+                <p>A for a-moll</p>
+                <p>C for C-dur</p>
+                <p>D for d-moll</p>
+                <p>E for E7</p>
+                <p>F for F-dur</p>
+                <p>G for G-dur</p>
+            </div>
+    
+            <div class="col border border-secondary rounded m-3">
+                <h3>To play melody you need to press some of below keys with your right hand:</h3>
+                <p>(these keys have the same position as on a piano keyboard - look at the interactive keyboard below)</p>
+                <div class="row">
+                    <div class="col">
+                        <p>6 for Gis</p>
+                        <p>Y for A</p>
+                        <p>7 for Ais</p>
+                        <p>U for B</p>
+                        <p>I for C</p>
+                        <p>9 for Cis</p>
+                    </div>
+                    <div class="col">
+                        <p>O for D</p>
+                        <p>0 for Dis</p>
+                        <p>P for E</p>
+                        <p>[ for F</p>
+                        <p>= for Fis</p>
+                        <p>] for G</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="keyboard" class="text-center">
+            <div id="upperRow">
+                <button id="Gis" style="background-color: black; color: white" class="btn">6</button>
+                <button id="Ais" style="background-color: black; color: white" class="btn">7</button>
+                  <button style="background-color: white; color: white" class="btn">x</button> <!--empty spaces-->
+                <button id="Cis" style="background-color: black; color: white" class="btn">9</button>
+                <button id="Dis" style="background-color: black; color: white" class="btn">0</button>
+                  <button style="background-color: white; color: white" class="btn">x</button> <!--empty spaces-->
+                <button id="Fis" style="background-color: black; color: white" class="btn">=</button>   
+            </div>
+            <div id="downRow">
+      
+                <button id="A" class="btn btn-secondary">Y</button>
+                
+                <button id="B" class="btn btn-secondary">U</button>
+                <button id="C" class="btn btn-secondary" style="background-color: red; color: white">I</button>
+                
+                <button id="D" class="btn btn-secondary">O</button>
+                
+                <button id="E" class="btn btn-secondary">P</button>
+                <button id="F" class="btn btn-secondary">[</button>
+                
+                <button id="G" class="btn btn-secondary">]</button>
+            </div>
+        </div>
     </div>
     
-    <div id="downRow">
-      
-      <button id="A">A</button>
-      
-      <button id="B">B</button>
-      <button id="C">C</button>
-      
-      <button id="D">D</button>
-      
-      <button id="E">E</button>
-      <button id="F">F</button>
-      
-      <button id="G">G</button>
-    </div>
-
     <script src="script.js"></script>
+    <!-- & jQuery needed for Bootstrap (but not only)-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
 
   </body>
 </html>

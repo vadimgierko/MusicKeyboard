@@ -1,7 +1,3 @@
-// zrób array key - file
-
-// .pause()
-
 const keyGis = document.getElementById("Gis");
 const soundGis = new Audio("sounds/Gis.wav");
 keyGis.addEventListener("click", () => {
@@ -104,6 +100,7 @@ document.addEventListener("keypress", (e) => {
     soundG.play();
   }
   */
+ 
   // right hand => melody
   if (key === "Digit6") {
     soundGis.play();

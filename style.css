@@ -1,0 +1,13 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#downRow {
+  margin-left: 20px;
+}
+
+button {
+  width: 35px;
+  height: 35px;
+}

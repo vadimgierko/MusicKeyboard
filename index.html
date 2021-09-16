@@ -51,38 +51,59 @@
         <div id="keyboard" class="text-center">
             <div id="upperRow">
                 <!-- FIRST OCTAVE -->
-                <button id="Cis" style="background-color: black; color: white" class="btn key black">2</button>
-                <button id="Dis" style="background-color: black; color: white" class="btn key black">3</button>
+                <button data-sound="Cis" style="background-color: black; color: white" class="btn key black">2</button>
+                <button data-sound="Dis" style="background-color: black; color: white" class="btn key black">3</button>
                   <button style="background-color: white; color: white" class="btn">x</button> <!--empty spaces-->
-                <button id="Fis" style="background-color: black; color: white" class="btn key black">5</button> 
-                <button id="Gis" style="background-color: black; color: white" class="btn key black">6</button>
-                <button id="Ais" style="background-color: black; color: white" class="btn key black">7</button>
+                <button data-sound="Fis" style="background-color: black; color: white" class="btn key black">5</button> 
+                <button data-sound="Gis" style="background-color: black; color: white" class="btn key black">6</button>
+                <button data-sound="B" style="background-color: black; color: white" class="btn key black">7</button>
                   <button style="background-color: white; color: white" class="btn">x</button> <!--empty spaces-->
                 <!-- SECOND OCTAVE -->
-                <button id="Cis" style="background-color: black; color: white" class="btn key black">9</button>
-                <button id="Dis" style="background-color: black; color: white" class="btn key black">0</button>
+                <button data-sound="Cis2" style="background-color: black; color: white" class="btn key black">9</button>
+                <button data-sound="Dis2" style="background-color: black; color: white" class="btn key black">0</button>
                   <button style="background-color: white; color: white" class="btn">x</button> <!--empty spaces-->
-                <button id="Fis" style="background-color: black; color: white" class="btn key black">=</button>   
+                <button data-sound="Fis2" style="background-color: black; color: white" class="btn key black">=</button>   
             </div>
             <div id="downRow">
                 <!-- FIRST OCTAVE -->
-                <button id="C" class="btn btn-secondary key white" style="background-color: red; color: white">Q</button>
-                <button id="D" class="btn btn-secondary key white">W</button>
-                <button id="E" class="btn btn-secondary key white">E</button>
-                <button id="F" class="btn btn-secondary key white">R</button>
-                <button id="G" class="btn btn-secondary key white">T</button>
-                <button id="A" class="btn btn-secondary key white">Y</button>
-                <button id="B" class="btn btn-secondary key white">U</button>
+                <button data-sound="C" class="btn btn-secondary key white" style="background-color: red; color: white">Q</button>
+                <button data-sound="D" class="btn btn-secondary key white">W</button>
+                <button data-sound="E" class="btn btn-secondary key white">E</button>
+                <button data-sound="F" class="btn btn-secondary key white">R</button>
+                <button data-sound="G" class="btn btn-secondary key white">T</button>
+                <button data-sound="A" class="btn btn-secondary key white">Y</button>
+                <button data-sound="H" class="btn btn-secondary key white">U</button>
                 <!-- SECOND OCTAVE -->
-                <button id="C" class="btn btn-secondary key white" style="background-color: red; color: white">I</button>
-                <button id="D" class="btn btn-secondary key white">O</button>
-                <button id="E" class="btn btn-secondary key white">P</button>
-                <button id="F" class="btn btn-secondary key white">[</button>
-                <button id="G" class="btn btn-secondary key white">]</button>
+                <button data-sound="C2" class="btn btn-secondary key white" style="background-color: red; color: white">I</button>
+                <button data-sound="D2" class="btn btn-secondary key white">O</button>
+                <button data-sound="E2" class="btn btn-secondary key white">P</button>
+                <button data-sound="F2" class="btn btn-secondary key white">[</button>
+                <button data-sound="G2" class="btn btn-secondary key white">]</button>
             </div>
         </div>
     </div>
     
+    <audio id="C" src="sounds/C.mp3"></audio>
+    <audio id="Cis" src="sounds/Cis.mp3"></audio>
+    <audio id="D" src="sounds/D.mp3"></audio>
+    <audio id="Dis" src="sounds/Dis.mp3"></audio>
+    <audio id="E" src="sounds/E.mp3"></audio>
+    <audio id="F" src="sounds/F.mp3"></audio>
+    <audio id="Fis" src="sounds/Fis.mp3"></audio>
+    <audio id="G" src="sounds/G.mp3"></audio>
+    <audio id="Gis" src="sounds/Gis.wav"></audio>
+    <audio id="A" src="sounds/A.wav"></audio>
+    <audio id="B" src="sounds/B.wav"></audio>
+    <audio id="H" src="sounds/H.wav"></audio>
+    <audio id="C2" src="sounds/C2.wav"></audio>
+    <audio id="Cis2" src="sounds/Cis2.wav"></audio>
+    <audio id="D2" src="sounds/D2.wav"></audio>
+    <audio id="Dis2" src="sounds/Dis2.wav"></audio>
+    <audio id="E2" src="sounds/E2.wav"></audio>
+    <audio id="F2" src="sounds/F2.wav"></audio>
+    <audio id="Fis2" src="sounds/Fis2.wav"></audio>
+    <audio id="G2" src="sounds/G2.wav"></audio>
+
     <script src="script.js"></script>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

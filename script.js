@@ -46,10 +46,9 @@ document.addEventListener("keydown", (e) => {
     document.getElementById("F").play();
     document.getElementById("A").play();
     document.getElementById("D2").play();
-  } else if (key === "KeyX") { // E7 CHORD
+  } else if (key === "KeyX") {
     document.getElementById("E").play();
     document.getElementById("Gis").play();
     document.getElementById("H").play();
-    document.getElementById("D").play();
   }
 });
